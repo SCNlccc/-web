@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>云端编程</title>
+    <style type="text/css">
+		#logo {
+		    width: 150px;
+		    position: absolute;
+		    top: 80px;
+		    left: 150px;
+		    z-index: 2; /* 设置图片的堆叠顺序 */
+		}
+        #blue {
+            width: 1000px;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            z-index: 1; /* 设置图片的堆叠顺序 */
+        }
+        #m {
+            width: 650px;
+            position: absolute;
+            top: 500px;
+            left: 100px;
+            z-index: 1; /* 设置图片的堆叠顺序 */
+        }
+        #w {
+            width: 650px;
+            position: absolute;
+            top: 1300px;
+            left: 100px;
+            z-index: 1; /* 设置图片的堆叠顺序 */
+        }
+		#t {
+		    width: 650px;
+		    position: absolute;
+		    top: 2200px;
+		    left: 100px;
+		    z-index: 1; /* 设置图片的堆叠顺序 */
+		}
+        #t1 {
+            position: absolute;
+            top: 60px;
+            left: 200px;
+            z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+            color: white;
+            font-size: 25px;
+			font-weight: 900; /* 设置文本为粗体 */
+        }
+		#t2 {
+		    position: absolute;
+		    top: 120px;
+		    left: 300px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: white;
+		    font-size: 40px;
+			
+			font-weight: 900; /* 设置文本为粗体 */
+		}
+		#t3 {
+		    position: absolute;
+		    top: 200px;
+		    left: 350px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: white;
+		    font-size: 15px;
+			font-family: "Times New Roman", Times, serif; /* 修改字体 */
+			font-weight: 300; /* 设置文本为粗体 */
+		}
+		#t4 {
+		    position: absolute;
+		    top: 1000px;
+		    left: 150px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 40px;
+			font-weight: 900; /* 设置文本为粗体 */
+		}
+		#t5 {
+		    position: absolute;
+		    top: 1100px;
+		    left: 150px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 15px;
+			font-weight: 100; /* 设置文本为粗体 */
+		}
+		#t6 {
+		    position: absolute;
+		    top: 1800px;
+		    left: 150px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 40px;
+			font-weight: 900; /* 设置文本为粗体 */
+		}
+		#t7 {
+		    position: absolute;
+		    top: 1900px;
+		    left: 150px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 15px;
+			font-weight: 100; /* 设置文本为粗体 */
+		}
+		
+		#t8 {
+		    position: absolute;
+		    top: 2050px;
+		    left: 150px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 40px;
+			font-weight: 900; /* 设置文本为粗体 */
+		}
+		#t9 {
+		    position: absolute;
+		    top: 2210px;
+		    left: 110px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 20px;
+			font-weight: 600; /* 设置文本为粗体 */
+		}
+		#t10 {
+		    position: absolute;
+		    top: 2250px;
+		    left: 150px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 15px;
+			font-weight: 600; /* 设置文本为粗体 */
+		}
+		#t11 {
+		    position: absolute;
+		    top: 2190px;
+		    left: 520px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 20px;
+			font-weight: 600; /* 设置文本为粗体 */
+		}
+		#t12 {
+		    position: absolute;
+		    top: 2230px;
+		    left: 500px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 15px;
+			font-weight: 600; /* 设置文本为粗体 */
+		}
+		#t13 {
+		    position: absolute;
+		    top: 2500px;
+		    left: 520px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 20px;
+			font-weight: 600; /* 设置文本为粗体 */
+		}
+		#t14 {
+		    position: absolute;
+		    top: 2530px;
+		    left: 500px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 15px;
+			font-weight: 600; /* 设置文本为粗体 */
+		}
+		#t15 {
+		    position: absolute;
+		    top: 2800px;
+		    left: 350px;
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    color: black;
+		    font-size: 25px;
+			font-weight: 0; /* 设置文本为粗体 */
+		}
+		
+		#登录 {
+		    padding: 10px 20px; /* 按钮内边距 */
+		    background-color: rgba(0,0,0,0); /* 按钮背景颜色 */
+		    color: white; /* 文字颜色 */
+		    cursor: pointer; /* 鼠标悬停时显示手型光标 */		    
+		    /* 设置按钮大小 */
+		    width: 80px; /* 按钮宽度 */
+		    height: 40px; /* 按钮高度 */
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    /* 设置按钮位置 */
+		    position: absolute; /* 相对于最近的非static定位父元素进行定位 */
+		    top: 100px;
+		    left: 900px; 
+			border: 2px solid #ffffff; /* 设置白色边框 */
+		    transform: translate(-50%, -50%); /* 将按钮向左上角移动自身宽高的一半，实现居中效果 */
+            border-radius: 10px; /* 设置圆角半径 */
+			
+		}
+		
+		#注册 {
+		    padding: 10px 20px; /* 按钮内边距 */
+		    background-color: rgba(0,0,0,0); /* 按钮背景颜色 */
+		    color: white; /* 文字颜色 */
+		    cursor: pointer; /* 鼠标悬停时显示手型光标 */		    
+		    /* 设置按钮大小 */
+		    width: 80px; /* 按钮宽度 */
+		    height: 40px; /* 按钮高度 */
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    /* 设置按钮位置 */
+		    position: absolute; /* 相对于最近的非static定位父元素进行定位 */
+		    top: 100px;
+		    left: 1000px; 
+			border: 2px solid #ffffff; /* 设置白色边框 */
+		    border-radius: 10px; /* 设置圆角半径 */
+			transform: translate(-50%, -50%); /* 将按钮向左上角移动自身宽高的一半，实现居中效果 */
+		}
+		#马上学习 {
+		    padding: 10px 20px; /* 按钮内边距 */
+		    background-color: white; /* 按钮背景颜色 */
+		    color: #b3d4fc; /* 文字颜色 */
+			font-size: 20px;
+			font-weight: bold; 
+		    cursor: pointer; /* 鼠标悬停时显示手型光标 */		    
+		    /* 设置按钮大小 */
+		    width: 150px; /* 按钮宽度 */
+		    height: 50px; /* 按钮高度 */
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    /* 设置按钮位置 */
+		    position: absolute; /* 相对于最近的非static定位父元素进行定位 */
+		    top: 300px;
+		    left: 600px; 
+		    transform: translate(-50%, -50%); /* 将按钮向左上角移动自身宽高的一半，实现居中效果 */
+			border: 2px solid rgba(52, 152, 219, 0); /* 设置透明边框 */
+			border-radius: 10px; /* 设置圆角半径 */
+			
+		}
+		#了解1 {
+		    padding: 10px 20px; /* 按钮内边距 */
+		    background-color: rgba(0,0,0,0); /* 按钮背景颜色 */
+		    color: black; /* 文字颜色 */
+		    cursor: pointer; /* 鼠标悬停时显示手型光标 */		    
+		    /* 设置按钮大小 */
+		    width: 700px; /* 按钮宽度 */
+		    height: 40px; /* 按钮高度 */
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    /* 设置按钮位置 */
+		    position: absolute; /* 相对于最近的非static定位父元素进行定位 */
+		    top: 1200px;
+		    left: 500px; 
+		    transform: translate(-50%, -50%); /* 将按钮向左上角移动自身宽高的一半，实现居中效果 */
+			border-radius: 10px; /* 设置圆角半径 */
+		}
+		#了解2 {
+		    padding: 10px 20px; /* 按钮内边距 */
+		    background-color: rgba(0,0,0,0); /* 按钮背景颜色 */
+		    color: black; /* 文字颜色 */
+		    cursor: pointer; /* 鼠标悬停时显示手型光标 */		    
+		    /* 设置按钮大小 */
+		    width: 700px; /* 按钮宽度 */
+		    height: 40px; /* 按钮高度 */
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    /* 设置按钮位置 */
+		    position: absolute; /* 相对于最近的非static定位父元素进行定位 */
+		    top: 2000px;
+		    left: 500px; 
+		    transform: translate(-50%, -50%); /* 将按钮向左上角移动自身宽高的一半，实现居中效果 */
+			border-radius: 10px; /* 设置圆角半径 */
+		}
+
+		#马上 {
+		    padding: 10px 20px; /* 按钮内边距 */
+		    background-color: rgba(0,0,0,0); /* 按钮背景颜色 */
+		    color: black; /* 文字颜色 */
+		    cursor: pointer; /* 鼠标悬停时显示手型光标 */		    
+		    /* 设置按钮大小 */
+		    width: 700px; /* 按钮宽度 */
+		    height: 40px; /* 按钮高度 */
+		    z-index: 2; /* 设置文本的堆叠顺序高于图片 */
+		    /* 设置按钮位置 */
+		    position: absolute; /* 相对于最近的非static定位父元素进行定位 */
+		    top: 2660px;
+		    left: 500px; 
+		    transform: translate(-50%, -50%); /* 将按钮向左上角移动自身宽高的一半，实现居中效果 */
+			border-radius: 10px; /* 设置圆角半径 */
+		}
+	
+		
+    </style>
+</head>
+<body>
+    <p id="t1"></p>
+	<p id="t2">云端编程，浏览器里边学边练</p>
+	<p id="t3">软件定义一切，网络连接时空，学习软件技术，创造未来世界。</p>
+	<p id="t4">高级Web编程实验室</p>
+	<p id="t5">每人拥有自己完全独立的编程实验室，内置所有基础软件及学习素材。打开浏览器，即刻开始编程！</p>
+	<p id="t6">双屏学习</p>
+	<p id="t7">双屏学习，小屏视频互动，大屏实际操作，学习无障碍。打开浏览器，即刻开始编程</p>
+	<p id="t8">课程特色</p>
+	<p id="t9">丰富的教学服务:</p>
+	<p id="t10">特色教学服务功能，各种配套教学服务，在线学习从未如此轻松。</p>
+	<p id="t11">多元的学习方式:</p>
+	<p id="t12">知识提炼、答疑解惑、实时互动、开发有特色的教学服务方式。</p>
+	<p id="t13">高品质的学习体验:</p>
+	<p id="t14">多屏合一，随时学习，随时在线，学习记录一目了然，知识充电不再受限。</p>
+	<p id="t15">©2024 云端科技 Artech All rights reserve</p>
+   <!-- <div class="a2024">©2024 云端科技 Artech All rights reserve</div>
+	 -->
+	<button id="登录">登录</button>
+	<button id="注册">注册</button>
+	<button id="马上学习">马上学习</button>
+	<button id="了解1">了解详情</button>
+	<button id="了解2">了解详情</button>
+	<button id="马上">马上学习</button>
+    <img src="./home-banner@2x.jpg" id="blue">
+    <img src="./img-lab@2x.png" id="m">
+    <img src="./img-screens@2x.png" id="w">
+	<img src="./img-media@2x.png" id="t">
+	<img src="./logo-white.svg" id="logo">
+</body>
+</html>
